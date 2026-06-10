@@ -155,8 +155,6 @@ export default function RegistrationPage() {
       return setError("Please enter your WhatsApp number.");
     if (!personal.city.trim())
       return setError("Please enter your city.");
-    if (!screenshot)
-      return setError("Please upload your payment screenshot.");
 
     setIsSubmitting(true);
 

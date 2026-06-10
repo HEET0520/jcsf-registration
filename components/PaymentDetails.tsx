@@ -157,7 +157,7 @@ export default function PaymentDetails({
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">
           Upload Payment Screenshot{" "}
-          <span className="text-red-400">*</span>
+          <span className="text-gray-400 text-xs font-normal">(optional)</span>
         </label>
 
         <input
