@@ -165,7 +165,7 @@ export default function RegistrationPage() {
       fd.append("familyMembers", JSON.stringify(familyMembers));
       Object.entries(travel).forEach(([k, v]) => fd.append(k, v));
       fd.append("totalAmount", String(totalAmount));
-      fd.append("screenshot", screenshot);
+      if (screenshot) fd.append("screenshot", screenshot);
 
       const res = await fetch("/api/register", { method: "POST", body: fd });
       const json = await res.json();
